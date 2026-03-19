@@ -24,10 +24,10 @@ const App = () => {
   }
 
   return (
-    <>
+    <div className="bg-black h-screen">
       <Entry text={text} onTextChange={onTextChange} onAdd={onAdd} />
       <List todos={todos} onDelete={onDelete}/>    
-    </>
+    </div>
   )
 }
 
