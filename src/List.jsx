@@ -9,7 +9,7 @@ const List = ({todos, onDelete}) => {
 
   return (
     <div>
-      <ol>
+      <ol className="text-teal-300 list-decimal list-outside p-7 font-bold text-2xl">
         {rows}
       </ol>
     </div>

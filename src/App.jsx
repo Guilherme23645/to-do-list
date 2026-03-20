@@ -24,9 +24,12 @@ const App = () => {
   }
 
   return (
-    <div className="bg-black h-screen">
-      <Entry text={text} onTextChange={onTextChange} onAdd={onAdd} />
-      <List todos={todos} onDelete={onDelete}/>    
+    <div className="bg-black h-screen flex flex-col items-center">
+      <div className="flex flex-col mt-4 border border-teal-300 p-2 rounded-lg">
+        <h1 className="text-teal-300 font-bold text-3xl pt-3 pb-4 self-center">To-Do List</h1>
+        <Entry text={text} onTextChange={onTextChange} onAdd={onAdd} />
+        <List todos={todos} onDelete={onDelete}/>    
+      </div>
     </div>
   )
 }
